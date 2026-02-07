@@ -1,0 +1,11 @@
+{
+    "editor.foldingHighlight": true,
+    "dart.flutterTestLogFile": null,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit",
+        "source.organizeImports": "explicit"
+    },
+    "editor.formatOnSave": true,
+    "editor.wordWrap": "on",
+    "diffEditor.codeLens": true
+}
