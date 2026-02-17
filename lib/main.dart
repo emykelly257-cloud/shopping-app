@@ -117,8 +117,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-/// RootScreen chooses the initial screen based on auth state.
 class RootScreen extends StatelessWidget {
   const RootScreen({super.key});
 
