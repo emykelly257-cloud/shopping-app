@@ -26,7 +26,6 @@ class _ShopScreenState extends State<ShopScreen> {
     super.initState();
     _searchController.addListener(_onSearchChanged);
     
-    // Load products when screen initializes
     WidgetsBinding.instance.addPostFrameCallback((_) {
       Provider.of<ItemsProvider>(context, listen: false).fetchItems();
     });
@@ -62,7 +61,6 @@ class _ShopScreenState extends State<ShopScreen> {
   void _addToCart(Item product) {
     final cartProvider = Provider.of<CartProvider>(context, listen: false);
     
-    // Since we're using Map in CartProvider, create a Map instead of CartItem object
     final cartItem = {
       'id': product.id,
       'title': product.title,
@@ -72,7 +70,6 @@ class _ShopScreenState extends State<ShopScreen> {
       'quantity': 1,
     };
     
-    // cartProvider.addToCart(cartItemCard!);
     
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
