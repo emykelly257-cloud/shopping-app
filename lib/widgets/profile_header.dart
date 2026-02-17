@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-/// A small widget that displays a user's profile summary (avatar, name, email).
 class ProfileHeader extends StatelessWidget {
   final String name;
   final String email;
