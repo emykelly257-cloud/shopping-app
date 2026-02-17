@@ -80,7 +80,6 @@ class _MainTabScreenState extends State<MainTabScreen> {
             cartProvider: cartProvider,
           ),
           
-          // Cart Button with Badge
           Stack(
             children: [
               _buildFloatingNavItem(
@@ -120,7 +119,6 @@ class _MainTabScreenState extends State<MainTabScreen> {
             ],
           ),
           
-          // History Button
           _buildFloatingNavItem(
             icon: Icons.history_outlined,
             activeIcon: Icons.history,
@@ -129,7 +127,6 @@ class _MainTabScreenState extends State<MainTabScreen> {
             cartProvider: cartProvider,
           ),
           
-          // Account Button
           _buildFloatingNavItem(
             icon: Icons.person_outlined,
             activeIcon: Icons.person,
