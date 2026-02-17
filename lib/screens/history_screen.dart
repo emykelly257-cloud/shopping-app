@@ -41,7 +41,6 @@ class _HistoryScreenState extends State<HistoryScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        // Control back arrow visibility based on showBackArrow parameter
         leading: widget.showBackArrow
             ? IconButton(
                 icon: const Icon(Icons.arrow_back),
