@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/auth_provider.dart';
-import '../providers/theme_provider.dart'; // Add this import
+import '../providers/theme_provider.dart'; 
 import '../models/user.dart';
 import 'history_screen.dart';
 
@@ -72,7 +72,7 @@ class AccountScreen extends StatelessWidget {
                 ),
               ),
               
-              // Menu Items
+         
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 16),
                 child: Column(
@@ -110,7 +110,6 @@ class AccountScreen extends StatelessWidget {
                       },
                     ),
                     
-                    // THEME SETTINGS - ADDED HERE
                     Consumer<ThemeProvider>(
                       builder: (context, themeProvider, child) {
                         return ListTile(
@@ -197,7 +196,6 @@ class AccountScreen extends StatelessWidget {
     );
   }
 
-  // NEW: Show Theme Options Dialog
   void _showThemeOptions(BuildContext context, ThemeProvider themeProvider) {
     showDialog(
       context: context,
@@ -232,8 +230,7 @@ class AccountScreen extends StatelessWidget {
                 Navigator.pop(context);
               },
             ),
-            // If you want to add system theme option later:
-            /*
+         
             ListTile(
               leading: const Icon(Icons.phone_iphone),
               title: const Text('System Default'),
