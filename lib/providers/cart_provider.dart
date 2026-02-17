@@ -21,7 +21,6 @@ class CartProvider with ChangeNotifier {
     notifyListeners();
   }
   
-  // Helper method to add from Map (if needed)
   void addToCartFromMap(Map<String, dynamic> map) {
     final item = CartItem.fromMap(map);
     addToCart(item);
