@@ -26,9 +26,9 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => ItemsProvider()),
         ChangeNotifierProvider(create: (_) => CartProvider()),
       ],
-      child: Consumer<ThemeProvider>(builder: (context, themeProvider, _) { // Fixed: Changed 'theme' to 'themeProvider'
+      child: Consumer<ThemeProvider>(builder: (context, themeProvider, _) { 
         return MaterialApp(
-          title: 'Shopping App', // Changed from 'Flutter Demo'
+          title: 'Shopping App',
           theme: _buildLightTheme(),
           darkTheme: _buildDarkTheme(),
           themeMode: themeProvider.themeMode,
@@ -43,7 +43,7 @@ class MyApp extends StatelessWidget {
     );
   }
 
-  // Moved theme methods inside the class
+ 
   ThemeData _buildLightTheme() {
     return ThemeData(
       useMaterial3: true,
