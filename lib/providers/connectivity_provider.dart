@@ -26,7 +26,6 @@ class ConnectivityProvider with ChangeNotifier {
     });
   }
   
-  // This is the method you need
   Future<bool> checkConnection() async {
     _isOnline = await _service.hasInternetConnection();
     notifyListeners();
