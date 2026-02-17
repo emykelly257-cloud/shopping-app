@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../models/cart_item.dart';
 
 class CartProvider with ChangeNotifier {
-  List<CartItem> _cartItems = []; // Changed from List<Map> to List<CartItem>
+  List<CartItem> _cartItems = []; 
   
   List<CartItem> get cartItems => _cartItems;
   int get itemCount => _cartItems.length;
@@ -11,7 +11,7 @@ class CartProvider with ChangeNotifier {
     return _cartItems.fold(0, (sum, item) => sum + item.totalPrice);
   }
   
-  void addToCart(CartItem item) { // Changed parameter type
+  void addToCart(CartItem item) { 
     final index = _cartItems.indexWhere((cartItem) => cartItem.id == item.id);
     if (index != -1) {
       _cartItems[index].quantity += 1;
