@@ -3,7 +3,7 @@ import 'package:flutter_application_3/models/cart_item.dart';
 
 
 class CartItemCard extends StatelessWidget {
-  final CartItem item; // Changed from CartItem to Map
+  final CartItem item; 
   final VoidCallback onRemove;
   final Function(int) onQuantityChanged;
   
