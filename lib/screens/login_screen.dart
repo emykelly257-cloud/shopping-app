@@ -84,7 +84,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 
                 const SizedBox(height: 32),
                 
-                // Title
+                
                 const Text(
                   'Sign In',
                   textAlign: TextAlign.center,
@@ -97,7 +97,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 
                 const SizedBox(height: 8),
                 
-                // Subtitle
+                
                 const Text(
                   'Please sign in to continue',
                   textAlign: TextAlign.center,
@@ -106,7 +106,6 @@ class _LoginScreenState extends State<LoginScreen> {
                 
                 const SizedBox(height: 28),
                 
-                // Form
                 Form(
                   key: _formKey,
                   child: Column(
@@ -137,7 +136,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       
                       const SizedBox(height: 16),
                       
-                      // Password Field
+                    
                       TextFormField(
                         controller: _passwordController,
                         obscureText: _obscurePassword,
@@ -171,7 +170,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 
                 const SizedBox(height: 12),
                 
-                // Forgot Password
+            
                 Align(
                   alignment: Alignment.centerRight,
                   child: TextButton(
@@ -193,7 +192,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 
                 const SizedBox(height: 8),
                 
-                // Login Button with Consumer
+                
                 Consumer<AuthProvider>(
                   builder: (context, auth, _) {
                     // Navigate to dashboard on successful login
@@ -236,7 +235,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   },
                 ),
                 
-                // Demo Credentials Button
+                
                 const SizedBox(height: 12),
                 SizedBox(
                   width: double.infinity,
@@ -262,7 +261,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 
                 const SizedBox(height: 20),
                 
-                // Sign Up Link
+                
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -290,7 +289,6 @@ class _LoginScreenState extends State<LoginScreen> {
                   ],
                 ),
                 
-                // No provider-level error available; individual failures show SnackBars
                 const SizedBox.shrink(),
               ],
             ),
