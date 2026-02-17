@@ -52,7 +52,6 @@ class _HomeScaffold extends StatelessWidget {
   Widget build(BuildContext context) {
     final auth = Provider.of<AuthProvider>(context);
     return Consumer<DashboardProvider>(builder: (context, dash, _) {
-      // Show error view when provider has an error
       if (dash.error != null && !dash.isLoading) {
         return Scaffold(
           appBar: AppBar(title: const Text('Dashboard')),
@@ -71,7 +70,6 @@ class _HomeScaffold extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Dashboard'),
           actions: [
-            // Theme toggle
             Consumer<ThemeProvider>(builder: (context, theme, _) {
               return IconButton(
                 icon: Icon(theme.isDark ? Icons.dark_mode : Icons.light_mode),
