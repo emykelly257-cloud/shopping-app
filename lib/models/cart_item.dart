@@ -15,7 +15,6 @@ class CartItem {
     this.quantity = 1,
   });
   
-  // Make sure you have a factory constructor
   factory CartItem.fromMap(Map<String, dynamic> map) {
     return CartItem(
       id: map['id'] as int? ?? 0,
@@ -27,7 +26,6 @@ class CartItem {
     );
   }
   
-  // Convert to map
   Map<String, dynamic> toMap() {
     return {
       'id': id,
