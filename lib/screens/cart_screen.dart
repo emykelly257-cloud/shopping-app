@@ -5,7 +5,7 @@ import '../providers/cart_provider.dart';
 import '../widgets/cart_item_card.dart';
 
 class CartScreen extends StatefulWidget {
-  final bool showBackArrow; // New parameter to control back arrow visibility
+  final bool showBackArrow; 
 
 const CartScreen({super.key, this.showBackArrow = false});
 
@@ -18,7 +18,6 @@ class _CartScreenState extends State<CartScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        // Control back arrow visibility based on showBackArrow parameter
         leading: widget.showBackArrow
             ? IconButton(
                 icon: const Icon(Icons.arrow_back),
@@ -187,8 +186,6 @@ class _CartScreenState extends State<CartScreen> {
   }
 
   void _processCheckout(CartProvider cart) {
-    // In real app, you would process payment here
-    // For now, just show success message and clear cart
     
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(
@@ -197,8 +194,6 @@ class _CartScreenState extends State<CartScreen> {
       ),
     );
     
-    // Add to order history
-    // You would typically save this to a database or local storage
     
     cart.clearCart();
   }
