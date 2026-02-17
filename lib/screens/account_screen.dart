@@ -125,7 +125,6 @@ class AccountScreen extends StatelessWidget {
                             activeColor: Colors.blue,
                           ),
                           onTap: () {
-                            // Optional: Show theme options dialog
                             _showThemeOptions(context, themeProvider);
                           },
                           contentPadding: const EdgeInsets.symmetric(horizontal: 20),
