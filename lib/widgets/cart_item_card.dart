@@ -16,7 +16,6 @@ class CartItemCard extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
-    // Ensure we have valid data
     final title = item.title ;
     final description = item.description ;
     final price = item.price;
@@ -29,7 +28,7 @@ class CartItemCard extends StatelessWidget {
         padding: const EdgeInsets.all(12.0),
         child: Row(
           children: [
-            // Product Image
+          
             Container(
               width: 80,
               height: 80,
@@ -42,7 +41,7 @@ class CartItemCard extends StatelessWidget {
             
             const SizedBox(width: 12),
             
-            // Product Details
+           
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -83,7 +82,6 @@ class CartItemCard extends StatelessWidget {
                         ),
                       ),
                       
-                      // Quantity Controls
                       Row(
                         children: [
                           IconButton(
