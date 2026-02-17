@@ -7,7 +7,7 @@ class ApiService {
     return {
       'name': 'Demo User',
       'email': token == 'fake_token_test_user' ? 'test@example.com' : 'user@example.com',
-      'avatarUrl': '', // empty means show initials
+      'avatarUrl': '', 
     };
   }
 
