@@ -4,7 +4,7 @@ import '../models/item.dart';
 import '../providers/dashboard_provider.dart';
 
 class ItemEditScreen extends StatefulWidget {
-  final Item? item; // null => create, otherwise update
+  final Item? item; 
 
   const ItemEditScreen({super.key, this.item});
 
