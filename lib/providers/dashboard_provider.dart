@@ -28,7 +28,6 @@ class DashboardProvider extends ChangeNotifier {
     }
   }
 
-  /// Create a new item and insert it into the local list.
   Future<void> createItem({
     required Item item,
     required String title,
@@ -57,7 +56,6 @@ class DashboardProvider extends ChangeNotifier {
     }
   }
 
-  /// Update an existing item and reflect the change in the list.
   Future<void> updateItem(Item updated) async {
     isLoading = true;
     error = null;
