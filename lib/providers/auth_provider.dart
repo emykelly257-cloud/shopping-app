@@ -13,7 +13,6 @@ class AuthProvider extends ChangeNotifier {
 
   User? get user => null;
 
-  /// Loads stored login state from SharedPreferences.
   Future<void> loadLoginState() async {
     final prefs = await SharedPreferences.getInstance();
     token = prefs.getString('auth_token');
@@ -21,7 +20,6 @@ class AuthProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  /// Attempts to login using the service. Saves token to prefs on success.
   Future<void> login(String email, String password) async {
     isLoading = true;
     notifyListeners();
@@ -37,7 +35,6 @@ class AuthProvider extends ChangeNotifier {
     }
   }
 
-  /// Logout and clear stored login state.
   Future<void> logout() async {
     isLoading = true;
     notifyListeners();
