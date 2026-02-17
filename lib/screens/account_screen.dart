@@ -12,7 +12,7 @@ class AccountScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final authProvider = Provider.of<AuthProvider>(context);
     final User? user = authProvider.user;
-    final themeProvider = Provider.of<ThemeProvider>(context, listen: false); // Add theme provider
+    final themeProvider = Provider.of<ThemeProvider>(context, listen: false); 
     
     return Scaffold(
       body: SafeArea(
