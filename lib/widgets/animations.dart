@@ -145,7 +145,6 @@ class _StaggeredAnimationState extends State<StaggeredAnimation>
       vsync: this,
     );
     
-    // Delay based on index
     Future.delayed(
       Duration(milliseconds: widget.index * 100),
       () {
@@ -266,7 +265,6 @@ class _SlideInAnimationState extends State<SlideInAnimation>
   }
 }
 
-// Animated cart badge
 class AnimatedCartBadge extends StatefulWidget {
   final int count;
   final Widget child;
